@@ -5,16 +5,15 @@
    <script src="angular.min.js"></script>
    <script src="app.js"></script>
    <style>body { font-size: 1.3em; }</style>
-   <title>Name Calculator</title>
  </head>
- <body ng-app="NameCalculator">
-   <h1>Name Calculator</h1>
-   <div ng-controller="NameCalculatorController">
+ <body ng-app="myApp">
+   <h1>Lunch Checker</h1>
+   <div ng-controller="myCtrl">
+     <input type = "text" ng-model = "name" >
      <div>
-       Your name:
-       <input type="text" ng-model="name" ng-keyup="displayNumeric()">
+       <button ng-click="mySplit()">check If Too Much</button>
      </div>
-     <div>Total Numeric value of is: {{totalValue}}</div>
+     <div> {{count}}</div>
    </div>
  </body>
 </html>
